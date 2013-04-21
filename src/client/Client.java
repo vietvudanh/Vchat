@@ -98,8 +98,8 @@ public class Client extends JFrame implements Runnable{
 		
 		//move window to center of window
 		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-	    int x = (int) ((dimension.getWidth() - this.getWidth()) / 2);
-	    int y = (int) ((dimension.getHeight() - this.getHeight()) / 2);
+	    	int x = (int) ((dimension.getWidth() - this.getWidth()) / 2);
+	    	int y = (int) ((dimension.getHeight() - this.getHeight()) / 2);
 		setLocation(x,y);
 		
 		//set resizable
@@ -107,7 +107,6 @@ public class Client extends JFrame implements Runnable{
 		
 		//set default close operation
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		
 		
 		/*
 		 * add components to frame
@@ -169,8 +168,6 @@ public class Client extends JFrame implements Runnable{
 			}
 		});
 		
-		
-		
 		//All done, set visible
 		repaint();
 		revalidate();
@@ -179,7 +176,6 @@ public class Client extends JFrame implements Runnable{
 		//all GUI and connection is ready
 		//start Thread for receiving message
 		new Thread(this).start();
-		
 		
 	}//end Constructor
 
@@ -221,10 +217,7 @@ public class Client extends JFrame implements Runnable{
 					//default
 					default:
 						break;
-				}
-				
-				
-				
+				}			
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
