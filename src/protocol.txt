@@ -1,0 +1,25 @@
+==== Vchat protocol ====
+= author: vietvd =======
+= date: April 20, 2013 =
+========================
+
+client to server: "<online name>;<Type>;<content>"
+	type: 	[CHAT] chat content
+			[CHANGENAME] change current name to <content>
+			[]
+			
+server to all client: 
+	"<online name>;<Type>;<content>"
+	Type:	[CHAT] chat content
+	
+	"<TOALL>;<Type>;content"
+	Type: 	[ONLINELIST] list user online	
+	
+last modified: 10h03, 20/4/2013
+
+Change:
+- 10h03, 20/4/2013: init
+- 20h42, 20/4/2013: 
+	+ add details protocols
+	+ server to each client
+	+ online list 
